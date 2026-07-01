@@ -43,31 +43,52 @@
 
             <div class="movie-grid">
 
-                <!-- article: Defines a self-contained, independent composition like a card, post, or article -->
-                <article class="movie-card">
-                    <h3>The Boys</h3>
-                    <img src="images/the_boys.jpg" alt="The Boys poster" width="200">
-                    <p>A fun and irreverent take on what happens when superheroes abuse their superpowers.</p>
-                    <p><strong>Rating:</strong> 8.7/10</p>
-                    <a class="btn" href="details.html">View Details</a>
-                </article>
+            <!-- article: Defines a self-contained, independent composition like a card, post, or article -->
+            <article class="movie-card">
+                <h3>Speed Racer</h3>
+                <img src="Assets/images/Speed_Racer_Poster.jpg" alt="Speed Racer Poster" width="300">
+                <audio controls>
+                    <source src="Assets/audio/Go Speed Racer Go (Film Version).mp3" type="audio/mpeg">
+                </audio>
+                <p>Go! Speed Racer is a young and brilliant racing driver. When corruption in the racing leagues costs his brother his life,
+                   Speed must team up with the police and the mysterious Racer X to bring an end to the corruption and criminal activities.</p>
+                <video width="325" height="200" controls>
+                    <source src="Assets/videos/Speed_Racer_Trailer.mp4" type="video/mp4">
+                </video>
+                <p><strong>Rating:</strong> 10/10</p>
+                <a class = "btn" href="details.html">View Details</a>
+            </article>
 
-                <article class="movie-card">
-                    <h3>Superman</h3>
-                    <img src="images/superman.jpeg" alt="Superman movie poster" width="200">
-                    <p>An upcoming superhero movie following Superman's journey to reconcile his Kryptonian heritage.
-                    </p>
-                    <p><strong>Rating:</strong> 8.5/10</p>
-                    <a class="btn" href="details.html">View Details</a>
-                </article>
+            <article class="movie-card">
+                 <h3>Blue Beetle</h3>
+                <img src="Assets/images/Blue_Beetle_Poster.jpg" alt="Blue Beetle Poster" width="300">
+                <audio controls>
+                    <source src="Assets/audio/Blue Beetle Soundtrack  Blue Beetle Suite - Bobby Krlic  WaterTower.mp3" type="audio/mpeg">
+                </audio>
+                <p>Jaime Reyes is a superhero whether he likes it or not. Recent college grad Jaime Reyes returns home full of aspirations for his future,
+                   only to find that home is not quite as he left it. As he searches to find his purpose in the world, 
+                   fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.</p>
+                <video width="325" height="200" controls>
+                    <source src="Assets/videos/Blue_Beetle_Trailer.mp4" type="video/mp4">
+                </video>
+                <p><strong>Rating:</strong> 8/10</p>
+                <a class="btn" href="details.html">View Details</a>
+            </article>
 
-                <article class="movie-card">
-                    <h3>Avatar: Fire and Ash</h3>
-                    <img src="images/avatar_fire_and_ash.jpeg" alt="Avatar: Fire and Ash movie poster" width="200">
-                    <p>The next chapter in the Avatar franchise exploring the new ash people of Pandora.</p>
-                    <p><strong>Rating:</strong> 8.9/10</p>
-                    <a class="btn" href="details.html">View Details</a>
-                </article>
+            <article class="movie-card">
+                <h3>Everything Everywhere All At Once</h3>
+                <img src="Assets/images/Everything_Everywhere_All_At_Once_Poster.jpg" alt="Everything Everywhere All At Once Poster" width="300">
+                <audio controls>
+                    <source src="Assets/audio/This Is A Life (Extended).mp3" type="audio/mpeg">
+                </audio>
+                <p>The universe is so much bigger than you realize. An aging Chinese immigrant is swept up in an insane adventure, 
+                    where she alone can save what’s important to her by connecting with the lives she could have led in other universes.</p>
+                <video width="325" height="200" controls>
+                    <source src="Assets/videos/Everything_Everywhere_All_At_Once_Trailer.mp4" type="video/mp4">
+                </video>
+                <p><strong>Rating:</strong> 10/10</p>
+                <a class="btn" href="details.html">View Details</a>
+            </article>
             </div>
         </section>
 
@@ -80,49 +101,49 @@
                 <li>Comedy</li>
                 <li>Drama</li>
                 <li>Science Fiction</li>
-                <li>Horror</li>
+                <li>Sports</li>
             </ul>
         </section>
 
-        <section id="top-movies" class="section">
+        <section id="top-movies" class = "section">
             <h2>Top Movies Table</h2>
 
             <!-- table: Formats structured tabular data into organized rows, header blocks, and data cells -->
-            <div class="table-wrap">
-                <table class="movies-table">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Genre</th>
-                            <th>Year</th>
-                            <th>Rating</th>
-                        </tr>
-                    </thead>
+            <!-- Try adding the movies-table to the class -->
+            <table class="movies-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Genre</th>
+                        <th>Year</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
 
-                    <tbody>
-                        <tr>
-                            <td>The Boys</td>
-                            <td>Action / Sci-Fi</td>
-                            <td>2019</td>
-                            <td>8.7</td>
-                        </tr>
-                        <tr>
-                            <td>Superman</td>
-                            <td>Action / Sci-Fi</td>
-                            <td>2025</td>
-                            <td>8.5</td>
-                        </tr>
-                        <tr>
-                            <td>Avatar: Fire and Ash</td>
-                            <td>Science Fiction</td>
-                            <td>2025</td>
-                            <td>8.9</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <tbody>
+                    <tr>
+                        <td>Speed Racer</td>
+                        <td>Action / Sports</td>
+                        <td>2008</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Everything Everywhere All At Once</td>
+                        <td>Science Fiction / Comedy</td>
+                        <td>2022</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Beetle</td>
+                        <td>Action / Science Fiction</td>
+                        <td>2023</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-
+        
+        <!-- Review section -->
         <section id="reviews" class="section">
             <h2>Submit a Movie Review (Available Soon)</h2>
             <p><strong>Status:</strong> This feature is under development and will be available soon!</p>
@@ -130,13 +151,13 @@
             <!-- form: Wraps interactive controls to capture and submit user input -->
             <form action="#" method="post">
                 <!-- label: Provides a text label linked directly to a form control for accessibility -->
-                <label>Movie Title:</label>
+                <label >Movie Title:</label>
                 <br>
                 <!-- input: Creates basic interactive fields to capture user text or button clicks -->
                 <input type="text" placeholder="Coming soon..." disabled>
                 <br><br>
 
-                <label>Rating:</label>
+                <label >Rating:</label>
                 <br>
                 <!-- select: Creates a drop-down menu for selecting from multiple options -->
                 <select disabled>
@@ -151,10 +172,11 @@
                 <label for="review">Your Review:</label>
                 <br>
                 <!-- textarea: Provides a multi-line text input control suitable for longer text entries -->
-                <textarea rows="5" cols="40" placeholder="Write review here once available..." disabled></textarea>
+                <textarea rows="5" cols="40" placeholder="Write review here once available..."
+                    disabled></textarea>
                 <br><br>
 
-                <input class="btn" type="submit" value="Submit Review" disabled>
+                <input type="submit" value="Submit Review" disabled>
             </form>
         </section>
 

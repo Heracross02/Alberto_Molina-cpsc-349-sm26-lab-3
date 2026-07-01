@@ -140,9 +140,13 @@ main {
     padding: 2.5rem 0;
 }
 
-img {
+img,
+audio,
+video {
     max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 /* Styles each content section like a card. */
@@ -198,9 +202,24 @@ img {
     margin: 0;
 }
 
+/* Makes media inside movie cards responsive and visible. */
+.movie-card img,
+.movie-card audio,
+.movie-card video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.movie-card audio,
+.movie-card video {
+    min-height: 50px;
+}
+
 /* Makes movie posters the same size and shape. */
 .movie-card img {
-    width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
@@ -356,7 +375,7 @@ footer a:focus-visible {
 
 
 /* DEMO: Uncomment to see effect */
-/* @media (max-width: 640px) {
+@media (max-width: 640px) {
     .container {
         width: 95%;
     }
@@ -383,15 +402,63 @@ footer a:focus-visible {
         grid-template-columns: 1fr;
     }
 
-    .movie-card img {
-        width: min(100%, 250px);
+    .movie-card img,
+    .movie-card video,
+    .movie-card audio {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: 420px;
+        align-self: center;
+        margin: 0.75rem 0;
+    }
+
+    .movie-card video {
+        min-height: 180px;
+        min-width: 125px
+    }
+
+    .movie-card audio {
+        min-height: 60px;
+    }
+}
+
+/* TODO: Add responsive design for iPads */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        max-width: 1024px;
+        margin-inline: auto;
+    }
+
+    header {
+        padding: 2rem 0;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.65rem 0.35rem;
+    }
+
+    .movie-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .movie-card img,
+    .movie-card video,
+    .movie-card audio {
+        width: 100%;
+        max-width: 100%;
         height: auto;
         max-height: 420px;
         align-self: center;
     }
-} */
-
-/* TODO: Add responsive design for iPads */
-/* @media (max-width: 1024px) {
-
-} */
+}
